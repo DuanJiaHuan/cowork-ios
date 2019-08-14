@@ -15,6 +15,10 @@
 		9FE208DD22DD608000B1E1B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE208DC22DD608000B1E1B7 /* Assets.xcassets */; };
 		9FE208E022DD608000B1E1B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE208DE22DD608000B1E1B7 /* LaunchScreen.storyboard */; };
 		9FE208E322DD608000B1E1B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE208E222DD608000B1E1B7 /* main.m */; };
+		9FE88A632302A628009648B9 /* FYJChatModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE88A622302A628009648B9 /* FYJChatModule.framework */; };
+		9FE88A652302A62F009648B9 /* FYJSocialModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE88A642302A62F009648B9 /* FYJSocialModule.framework */; };
+		9FE88A672302A636009648B9 /* FYJWorkbenchModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE88A662302A636009648B9 /* FYJWorkbenchModule.framework */; };
+		9FE88A692302A63D009648B9 /* FYJMyModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE88A682302A63D009648B9 /* FYJMyModule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		9FE208DF22DD608000B1E1B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FE208E122DD608000B1E1B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE208E222DD608000B1E1B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9FE88A622302A628009648B9 /* FYJChatModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FYJChatModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE88A642302A62F009648B9 /* FYJSocialModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FYJSocialModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE88A662302A636009648B9 /* FYJWorkbenchModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FYJWorkbenchModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE88A682302A63D009648B9 /* FYJMyModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FYJMyModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0055A037E6E31C1493C227D /* Pods-DJHMainProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJHMainProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJHMainProject/Pods-DJHMainProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +49,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE88A692302A63D009648B9 /* FYJMyModule.framework in Frameworks */,
+				9FE88A672302A636009648B9 /* FYJWorkbenchModule.framework in Frameworks */,
+				9FE88A652302A62F009648B9 /* FYJSocialModule.framework in Frameworks */,
+				9FE88A632302A628009648B9 /* FYJChatModule.framework in Frameworks */,
 				650E6A40072AF1F400EE16E0 /* Pods_DJHMainProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +116,10 @@
 		EB9B0106AF6C4671BF114A66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FE88A682302A63D009648B9 /* FYJMyModule.framework */,
+				9FE88A662302A636009648B9 /* FYJWorkbenchModule.framework */,
+				9FE88A642302A62F009648B9 /* FYJSocialModule.framework */,
+				9FE88A622302A628009648B9 /* FYJChatModule.framework */,
 				839B63322142DDD9201B8855 /* Pods_DJHMainProject.framework */,
 			);
 			name = Frameworks;
@@ -378,6 +394,12 @@
 				DEVELOPMENT_TEAM = 5HPH65V7A8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DJHMainProject/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DJHCommonCore/DJHCommonCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit/YYKit.framework/Headers\"",
+				);
 				INFOPLIST_FILE = DJHMainProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -399,6 +421,12 @@
 				DEVELOPMENT_TEAM = 5HPH65V7A8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DJHMainProject/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DJHCommonCore/DJHCommonCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit/YYKit.framework/Headers\"",
+				);
 				INFOPLIST_FILE = DJHMainProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (

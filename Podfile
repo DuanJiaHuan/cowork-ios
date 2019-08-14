@@ -12,12 +12,17 @@ platform :ios, '8.0'
 use_frameworks!
 project 'DJHMainProject.xcodeproj'
 
-pod 'DJHSocialModule',    :path=> './DJHBusinessModules/DJHSocialModule/'
-pod 'DJHMyModule',        :path=> './DJHBusinessModules/DJHMyModule/'
-pod 'DJHMessageModule',   :path=> './DJHBusinessModules/DJHMessageModule/'
-pod 'DJHContactsModule',  :path=> './DJHBusinessModules/DJHContactsModule/'
-pod 'DJHWorkbenchModule', :path=> './DJHBusinessModules/DJHWorkbenchModule/'
-pod 'DJHCommonCore',      :path=> './DJHCommonCore/'
+#开发阶段使用导入模块工程方式；发布时，需配置好podspec，使用pod导入
+#pod 'FYJChatModule',      :path=> './FYJBusinessModules/'
+#pod 'FYJWorkbenchModule', :path=> './FYJBusinessModules/'
+#pod 'FYJSocialModule',    :path=> './FYJBusinessModules/'
+#pod 'FYJMyModule',        :path=> './FYJBusinessModules/'
+
+#公共基础模块pod导入
+pod 'DJHCommonCore',       :path=> './DJHCommonCore/'
+
+#公有pods
+pod 'YYKit'
 
 end
 
@@ -28,15 +33,58 @@ target 'DJHCommonCore' do
   project 'DJHCommonCore/DJHCommonCore.xcodeproj'
   
   pod 'AFNetworking'
+  pod 'YYKit'
   
 end
 
 #---业务模块集合名称---#
-target 'DJHBusinessModules' do
+target 'FYJBusinessModules' do
   platform :ios, '8.0'
   use_frameworks!
-  project 'DJHBusinessModules/DJHBusinessModules.xcodeproj'
-
+  project 'FYJBusinessModules/FYJBusinessModules.xcodeproj'
+  
   pod 'DJHCommonCore', :path=> './DJHCommonCore/'
 
 end
+
+#---（业务模块集合）我的模块名称---#
+target 'FYJMyModule' do
+  platform :ios, '8.0'
+  use_frameworks!
+  project 'FYJBusinessModules/FYJBusinessModules.xcodeproj'
+  
+  pod 'DJHCommonCore', :path=> './DJHCommonCore/'
+  
+end
+
+#---（业务模块集合）工作台模块名称---#
+target 'FYJWorkbenchModule' do
+  platform :ios, '8.0'
+  use_frameworks!
+  project 'FYJBusinessModules/FYJBusinessModules.xcodeproj'
+  
+  pod 'DJHCommonCore', :path=> './DJHCommonCore/'
+  
+end
+
+#---（业务模块集合）社区模块名称---#
+target 'FYJSocialModule' do
+  platform :ios, '8.0'
+  use_frameworks!
+  project 'FYJBusinessModules/FYJBusinessModules.xcodeproj'
+  
+  pod 'DJHCommonCore', :path=> './DJHCommonCore/'
+  
+end
+
+#---（业务模块集合）聊天模块名称---#
+target 'FYJChatModule' do
+  platform :ios, '8.0'
+  use_frameworks!
+  project 'FYJBusinessModules/FYJBusinessModules.xcodeproj'
+  
+  pod 'DJHCommonCore', :path=> './DJHCommonCore/'
+  
+end
+
+

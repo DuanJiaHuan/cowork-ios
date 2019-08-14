@@ -27,7 +27,7 @@
     NSMutableArray *vcSelectedImgArray = [NSMutableArray array];
     NSMutableArray *vcTitleArray = [NSMutableArray array];
     
-    Class MessageListClass = NSClassFromString(@"DJHMessageListViewController");
+    Class MessageListClass = NSClassFromString(@"FYJMessageListViewController");
     UIViewController *messageListVC = [[MessageListClass alloc] init];
     if (messageListVC) {
         [vcArray addObject:messageListVC];
@@ -36,7 +36,7 @@
         [vcTitleArray addObject:@"消息"];
     }
     
-    Class ContactsListClass = NSClassFromString(@"DJHContactsListViewController");
+    Class ContactsListClass = NSClassFromString(@"FYJContactsListViewController");
     UIViewController *contactsListVC = [[ContactsListClass alloc] init];
     if (contactsListVC) {
         [vcArray addObject:contactsListVC];
@@ -45,19 +45,19 @@
         [vcTitleArray addObject:@"联系人"];
     }
     
-    Class WorkbenchListClass = NSClassFromString(@"DJHWorkbenchListViewController");
-    UIViewController *workbenchListVC = [[WorkbenchListClass alloc] init];
-    if (workbenchListVC) {
-        [vcArray addObject:workbenchListVC];
+    Class WorkbenchHomeClass = NSClassFromString(@"FYJWorkbenchHomeViewController");
+    UIViewController *workbenchHomeVC = [[WorkbenchHomeClass alloc] init];
+    if (workbenchHomeVC) {
+        [vcArray addObject:workbenchHomeVC];
         [vcNormalImgArray addObject:@"tabBar_workbench_normal"];
         [vcSelectedImgArray addObject:@"tabBar_workbench_selected"];
         [vcTitleArray addObject:@"工作台"];
     }
     
-    Class MyListClass = NSClassFromString(@"DJHMyListViewController");
-    UIViewController *myListVC = [[MyListClass alloc] init];
-    if (myListVC) {
-        [vcArray addObject:myListVC];
+    Class MyHomeClass = NSClassFromString(@"FYJMyHomeViewController");
+    UIViewController *myHomeVC = [[MyHomeClass alloc] init];
+    if (myHomeVC) {
+        [vcArray addObject:myHomeVC];
         [vcNormalImgArray addObject:@"tabBar_my_normal"];
         [vcSelectedImgArray addObject:@"tabBar_my_selected"];
         [vcTitleArray addObject:@"我的"];

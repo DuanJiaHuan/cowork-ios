@@ -1,6 +1,6 @@
+[submodule "FYJBusinessModules"]
+	path = FYJBusinessModules
+	url = https://github.com/DuanJiaHuan/FYJBusinessModules.git
 [submodule "DJHCommonCore"]
 	path = DJHCommonCore
 	url = https://github.com/DuanJiaHuan/DJHCommonCore.git
-[submodule "DJHBusinessModules"]
-	path = DJHBusinessModules
-	url = https://github.com/DuanJiaHuan/DJHBusinessModules.git

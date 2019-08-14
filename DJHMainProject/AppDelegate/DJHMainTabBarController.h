@@ -6,7 +6,7 @@
 //  Copyright © 2019 duanjiahuan. All rights reserved.
 //
 
-#import <DJHBaseTabBarController.h>
+#import <DJHCommonCore/DJHCommonCore.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
