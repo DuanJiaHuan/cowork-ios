@@ -34,6 +34,8 @@ target 'DJHCommonCore' do
   
   pod 'AFNetworking'
   pod 'YYKit'
+  pod 'KMNavigationBarTransition'
+  pod 'Masonry'
   
 end
 
