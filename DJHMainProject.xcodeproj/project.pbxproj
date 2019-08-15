@@ -15,10 +15,10 @@
 		9FE208DD22DD608000B1E1B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE208DC22DD608000B1E1B7 /* Assets.xcassets */; };
 		9FE208E022DD608000B1E1B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE208DE22DD608000B1E1B7 /* LaunchScreen.storyboard */; };
 		9FE208E322DD608000B1E1B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE208E222DD608000B1E1B7 /* main.m */; };
-		9FE88A632302A628009648B9 /* FYJChatModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE88A622302A628009648B9 /* FYJChatModule.framework */; };
-		9FE88A652302A62F009648B9 /* FYJSocialModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE88A642302A62F009648B9 /* FYJSocialModule.framework */; };
-		9FE88A672302A636009648B9 /* FYJWorkbenchModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE88A662302A636009648B9 /* FYJWorkbenchModule.framework */; };
-		9FE88A692302A63D009648B9 /* FYJMyModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE88A682302A63D009648B9 /* FYJMyModule.framework */; };
+		9FEE481E2305417600A35462 /* FYJChatModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEE481D2305417600A35462 /* FYJChatModule.framework */; };
+		9FEE48202305417D00A35462 /* FYJMyModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEE481F2305417D00A35462 /* FYJMyModule.framework */; };
+		9FEE48222305418200A35462 /* FYJSocialModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEE48212305418200A35462 /* FYJSocialModule.framework */; };
+		9FEE48242305418800A35462 /* FYJWorkbenchModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEE48232305418800A35462 /* FYJWorkbenchModule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,10 +37,10 @@
 		9FE208DF22DD608000B1E1B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FE208E122DD608000B1E1B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE208E222DD608000B1E1B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9FE88A622302A628009648B9 /* FYJChatModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FYJChatModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FE88A642302A62F009648B9 /* FYJSocialModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FYJSocialModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FE88A662302A636009648B9 /* FYJWorkbenchModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FYJWorkbenchModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FE88A682302A63D009648B9 /* FYJMyModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FYJMyModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEE481D2305417600A35462 /* FYJChatModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FYJChatModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEE481F2305417D00A35462 /* FYJMyModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FYJMyModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEE48212305418200A35462 /* FYJSocialModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FYJSocialModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEE48232305418800A35462 /* FYJWorkbenchModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FYJWorkbenchModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0055A037E6E31C1493C227D /* Pods-DJHMainProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJHMainProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJHMainProject/Pods-DJHMainProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,10 +49,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FE88A692302A63D009648B9 /* FYJMyModule.framework in Frameworks */,
-				9FE88A672302A636009648B9 /* FYJWorkbenchModule.framework in Frameworks */,
-				9FE88A652302A62F009648B9 /* FYJSocialModule.framework in Frameworks */,
-				9FE88A632302A628009648B9 /* FYJChatModule.framework in Frameworks */,
+				9FEE48242305418800A35462 /* FYJWorkbenchModule.framework in Frameworks */,
+				9FEE48222305418200A35462 /* FYJSocialModule.framework in Frameworks */,
+				9FEE48202305417D00A35462 /* FYJMyModule.framework in Frameworks */,
+				9FEE481E2305417600A35462 /* FYJChatModule.framework in Frameworks */,
 				650E6A40072AF1F400EE16E0 /* Pods_DJHMainProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,10 +116,10 @@
 		EB9B0106AF6C4671BF114A66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9FE88A682302A63D009648B9 /* FYJMyModule.framework */,
-				9FE88A662302A636009648B9 /* FYJWorkbenchModule.framework */,
-				9FE88A642302A62F009648B9 /* FYJSocialModule.framework */,
-				9FE88A622302A628009648B9 /* FYJChatModule.framework */,
+				9FEE48232305418800A35462 /* FYJWorkbenchModule.framework */,
+				9FEE48212305418200A35462 /* FYJSocialModule.framework */,
+				9FEE481F2305417D00A35462 /* FYJMyModule.framework */,
+				9FEE481D2305417600A35462 /* FYJChatModule.framework */,
 				839B63322142DDD9201B8855 /* Pods_DJHMainProject.framework */,
 			);
 			name = Frameworks;
@@ -145,7 +145,7 @@
 				9FE208CC22DD607E00B1E1B7 /* Sources */,
 				9FE208CD22DD607E00B1E1B7 /* Frameworks */,
 				9FE208CE22DD607E00B1E1B7 /* Resources */,
-				CDE35F2D3545005A01AA40A8 /* [CP] Embed Pods Frameworks */,
+				9FC5325E3F4E7B11A9ACA3E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,7 +220,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CDE35F2D3545005A01AA40A8 /* [CP] Embed Pods Frameworks */ = {
+		9FC5325E3F4E7B11A9ACA3E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

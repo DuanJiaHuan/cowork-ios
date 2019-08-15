@@ -8,21 +8,20 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 #---主工程模块名称---#
 target 'DJHMainProject' do
-platform :ios, '8.0'
-use_frameworks!
-project 'DJHMainProject.xcodeproj'
+  platform :ios, '8.0'
+  use_frameworks!
+  project 'DJHMainProject.xcodeproj'
 
-#开发阶段使用导入模块工程方式；发布时，需配置好podspec，使用pod导入
-#pod 'FYJChatModule',      :path=> './FYJBusinessModules/'
-#pod 'FYJWorkbenchModule', :path=> './FYJBusinessModules/'
-#pod 'FYJSocialModule',    :path=> './FYJBusinessModules/'
-#pod 'FYJMyModule',        :path=> './FYJBusinessModules/'
+  #自己使用的话直接导入framework工程；提供给其他应用使用时，需配置好podspec，使用pod导入
+  #pod 'FYJChatModule',      :path=> './FYJBusinessModules/'
+  #pod 'FYJWorkbenchModule', :path=> './FYJBusinessModules/'
+  #pod 'FYJSocialModule',    :path=> './FYJBusinessModules/'
+  #pod 'FYJMyModule',        :path=> './FYJBusinessModules/'
 
-#公共基础模块pod导入
-pod 'DJHCommonCore',       :path=> './DJHCommonCore/'
-
-#公有pods
-pod 'YYKit'
+  #公共基础模块pod导入
+  pod 'DJHCommonCore',       :path=> './DJHCommonCore/'
+  #公有pods
+  pod 'YYKit'
 
 end
 
@@ -36,6 +35,7 @@ target 'DJHCommonCore' do
   pod 'YYKit'
   pod 'KMNavigationBarTransition'
   pod 'Masonry'
+  pod 'MJExtension'
   
 end
 
