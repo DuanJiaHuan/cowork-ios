@@ -60,11 +60,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9F033EFD22F95AD3008C5800 /* Modules */ = {
+		9F033EFD22F95AD3008C5800 /* ModuleConfig */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Modules;
+			path = ModuleConfig;
 			sourceTree = "<group>";
 		};
 		9F033EFE22F95AF5008C5800 /* AppDelegate */ = {
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				9F033EFE22F95AF5008C5800 /* AppDelegate */,
-				9F033EFD22F95AD3008C5800 /* Modules */,
+				9F033EFD22F95AD3008C5800 /* ModuleConfig */,
 				9FE208D922DD607F00B1E1B7 /* Main.storyboard */,
 				9FE208DC22DD608000B1E1B7 /* Assets.xcassets */,
 				9FE208DE22DD608000B1E1B7 /* LaunchScreen.storyboard */,
