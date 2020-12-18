@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "DJHMainTabBarController.h"
-#import <DJHAccountManager.h>
 
 @interface AppDelegate ()
 
@@ -19,8 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[DJHAccountManager sharedManager] loginWithAccountId:@"170799" completion:nil];
-    [DJHAccountManager sharedManager].loginAccount.userId = @"170799";
+    [[DJHAccountManager sharedInstance] loginWithAccountId:@"170799" completion:nil];
+    [DJHAccountManager sharedInstance].loginAccount.userId = @"170799";
     self.window.rootViewController = [[DJHMainTabBarController alloc] init];
     
     return YES;

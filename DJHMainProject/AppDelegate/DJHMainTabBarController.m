@@ -67,7 +67,13 @@
     UIColor *vcNormalTitleColor = [UIColor colorWithHexString:@"#999999"];
     UIColor *vcSelectedTitleColor = [UIColor colorWithHexString:@"#4CAF50"];
     
-    [self setTabBarChildViewControllerWithVCArray:vcArray vcNormalImgArray:vcNormalImgArray vcSelectedImgArray:vcSelectedImgArray vcTitleArray:vcTitleArray vcTitleFont:vcTitleFont vcNormalTitleColor:vcNormalTitleColor vcSelectedTitleColor:vcSelectedTitleColor];
+    [self setTabBarChildViewControllerWithVCArray:vcArray
+                                 vcNormalImgArray:vcNormalImgArray
+                               vcSelectedImgArray:vcSelectedImgArray
+                                     vcTitleArray:vcTitleArray
+                                      vcTitleFont:vcTitleFont
+                               vcNormalTitleColor:vcNormalTitleColor
+                             vcSelectedTitleColor:vcSelectedTitleColor];
 }
 
 /*

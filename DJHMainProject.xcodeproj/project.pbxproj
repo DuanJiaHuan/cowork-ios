@@ -15,10 +15,6 @@
 		9FE208DD22DD608000B1E1B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE208DC22DD608000B1E1B7 /* Assets.xcassets */; };
 		9FE208E022DD608000B1E1B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE208DE22DD608000B1E1B7 /* LaunchScreen.storyboard */; };
 		9FE208E322DD608000B1E1B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE208E222DD608000B1E1B7 /* main.m */; };
-		9FEE481E2305417600A35462 /* FYJChatModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEE481D2305417600A35462 /* FYJChatModule.framework */; };
-		9FEE48202305417D00A35462 /* FYJMyModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEE481F2305417D00A35462 /* FYJMyModule.framework */; };
-		9FEE48222305418200A35462 /* FYJSocialModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEE48212305418200A35462 /* FYJSocialModule.framework */; };
-		9FEE48242305418800A35462 /* FYJWorkbenchModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEE48232305418800A35462 /* FYJWorkbenchModule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,10 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FEE48242305418800A35462 /* FYJWorkbenchModule.framework in Frameworks */,
-				9FEE48222305418200A35462 /* FYJSocialModule.framework in Frameworks */,
-				9FEE48202305417D00A35462 /* FYJMyModule.framework in Frameworks */,
-				9FEE481E2305417600A35462 /* FYJChatModule.framework in Frameworks */,
 				650E6A40072AF1F400EE16E0 /* Pods_DJHMainProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,13 +52,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9F033EFD22F95AD3008C5800 /* ModuleConfig */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ModuleConfig;
-			sourceTree = "<group>";
-		};
 		9F033EFE22F95AF5008C5800 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +63,61 @@
 				9F033F0022F95C6A008C5800 /* DJHMainTabBarController.m */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9FDF302A246E707800FAC58F /* BusinessModules */ = {
+			isa = PBXGroup;
+			children = (
+				9FDF302D246E71DD00FAC58F /* MineModule */,
+				9FDF302C246E71B900FAC58F /* ServiceModule */,
+				9FDF302B246E70F600FAC58F /* WorkbenchModule */,
+			);
+			path = BusinessModules;
+			sourceTree = "<group>";
+		};
+		9FDF302B246E70F600FAC58F /* WorkbenchModule */ = {
+			isa = PBXGroup;
+			children = (
+				9FDF302E246E71F200FAC58F /* WorkbenchHome */,
+			);
+			path = WorkbenchModule;
+			sourceTree = "<group>";
+		};
+		9FDF302C246E71B900FAC58F /* ServiceModule */ = {
+			isa = PBXGroup;
+			children = (
+				9FDF302F246E721400FAC58F /* ServiceHome */,
+			);
+			path = ServiceModule;
+			sourceTree = "<group>";
+		};
+		9FDF302D246E71DD00FAC58F /* MineModule */ = {
+			isa = PBXGroup;
+			children = (
+				9FDF3030246E722100FAC58F /* MineHome */,
+			);
+			path = MineModule;
+			sourceTree = "<group>";
+		};
+		9FDF302E246E71F200FAC58F /* WorkbenchHome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WorkbenchHome;
+			sourceTree = "<group>";
+		};
+		9FDF302F246E721400FAC58F /* ServiceHome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceHome;
+			sourceTree = "<group>";
+		};
+		9FDF3030246E722100FAC58F /* MineHome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MineHome;
 			sourceTree = "<group>";
 		};
 		9FE208C722DD607E00B1E1B7 = {
@@ -101,8 +141,8 @@
 		9FE208D222DD607F00B1E1B7 /* DJHMainProject */ = {
 			isa = PBXGroup;
 			children = (
+				9FDF302A246E707800FAC58F /* BusinessModules */,
 				9F033EFE22F95AF5008C5800 /* AppDelegate */,
-				9F033EFD22F95AD3008C5800 /* ModuleConfig */,
 				9FE208D922DD607F00B1E1B7 /* Main.storyboard */,
 				9FE208DC22DD608000B1E1B7 /* Assets.xcassets */,
 				9FE208DE22DD608000B1E1B7 /* LaunchScreen.storyboard */,
@@ -392,12 +432,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5HPH65V7A8;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DJHMainProject/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/DJHCommonCore/DJHCommonCore.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit/YYKit.framework/Headers\"",
 				);
 				INFOPLIST_FILE = DJHMainProject/Info.plist;
@@ -419,12 +459,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5HPH65V7A8;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DJHMainProject/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/DJHCommonCore/DJHCommonCore.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit/YYKit.framework/Headers\"",
 				);
 				INFOPLIST_FILE = DJHMainProject/Info.plist;
