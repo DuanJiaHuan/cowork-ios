@@ -1,0 +1,3 @@
+[submodule "DJHCommonCore"]
+	path = DJHCommonCore
+	url = https://github.com/DuanJiaHuan/DJHCommonCore.git
